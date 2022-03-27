@@ -1141,7 +1141,9 @@ p {
   .single-team .team-image {
     position: relative; }
     .single-team .team-image img {
-      width: 100%; }
+      width: 100%;
+      height: 369px;
+      object-fit: cover; }
     .single-team .team-image .social {
       position: absolute;
       left: 0;
