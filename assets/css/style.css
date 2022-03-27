@@ -134,7 +134,7 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 0 25px;
+  padding: 5px;
   font-size: 16px;
   line-height: 48px;
   border-radius: 8px;
@@ -530,6 +530,8 @@ p {
   transition: all 0.3s ease-out 0s; }
 
 .navbar-brand {
+  width: 150px;
+  height: 75px;
   padding: 0; }
 
 .navbar-toggler {
@@ -610,19 +612,23 @@ p {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    padding: 10px 0;
+    padding: 10px 5px;
     position: relative;
     font-family: "Poppins", sans-serif; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .navbar-nav .nav-item a {
         display: block;
-        padding: 4px 0;
+        padding: 4px 2px;
         color: #2E2E2E; } }
     @media (max-width: 767px) {
       .navbar-nav .nav-item a {
         display: block;
-        padding: 4px 0;
+        padding: 4px 1px;
         color: #2E2E2E; } }
+  .navbar-nav .nav-item:hover {
+    /* border-bottom: 2px solid #fe8464;  */
+    /* text-decoration: underline blue; */
+    transition: all 0.5s ease-in 0s; }
   .navbar-nav .nav-item:hover .sub-menu {
     top: 100%;
     opacity: 1;
@@ -920,15 +926,19 @@ p {
     font-size: 16px;
     font-weight: 400;
     color: #2E2E2E;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s; }
+    padding: 7px;
+    -webkit-transition: all 0.1s ease-out 0s;
+    -moz-transition: all 0.1s ease-out 0s;
+    -ms-transition: all 0.1s ease-out 0s;
+    -o-transition: all 0.1s ease-out 0s;
+    transition: all 0.1s ease-out 0s; }
     .single-services .services-content .more i {
       margin-left: 10px; }
     .single-services .services-content .more:hover {
-      color: #361CC1; }
+      background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+      color: white;
+      border-radius: 8px;
+     }
   .single-services:hover {
     border-color: #FE7A7B; }
     .single-services:hover .services-icon .shape {
