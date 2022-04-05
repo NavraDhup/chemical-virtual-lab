@@ -100,10 +100,6 @@ h5 {
 h6 {
   font-size: 16px; }
 
-ul, ol {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none; }
 
 p {
   font-size: 16px;
@@ -1528,3 +1524,89 @@ p {
   display: none; }
   .back-to-top:hover {
     color: #fff; }
+
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 85vw;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+
+.mytabs label {
+  padding: 25px;
+  background: #e2e2e2;
+  font-weight: bold;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  order: 1;
+  display: none;
+}
+
+.mytabs .tab h2 {
+  font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked+label+.tab {
+  display: block;
+}
+
+.mytabs input[type="radio"]:checked+label {
+  background: #361CC1;
+  color: white;
+}
+
+.labelname {
+  color: black;
+  background-color: #e3ebfa;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header-data {
+  margin: 10px 0;
+  font-size: larger;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-list > p {
+  margin: 10px 10px 0 0;
+  font-size: larger;
+}
+
+.header-list > img {
+  height: 70%;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.getshadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.listdata > ol {
+  margin-left: 30px;
+}
+
+.listdata > ol > li {
+  margin: 10px 0;
+}
